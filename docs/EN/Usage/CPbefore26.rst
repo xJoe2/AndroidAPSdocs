@@ -16,4 +16,3 @@ Activity & feedback
 * Age information was moved to actions tab / menu.
 * BG check was moved to actions tab / menu.
 * Temporary target was moved to actions tab / menu.
-* Excercise is no longer available but you can use the note field in the dialogue box when performing an action like giving bolus etc.
