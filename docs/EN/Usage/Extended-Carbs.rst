@@ -39,7 +39,10 @@ When eCarbs are generated, a Careportal note is also created to document all inp
 
 Extended bolus
 ==================================================
-As mentioned above extended or multiwave boluses do not really work in a closed loop environment. Therefore there is no option to issue an extended bolus in AndroidAPS. Here's why:
+
+Why extended bolus does not really work in a closed loop environment
+-----------------------------------------------------------------------
+As mentioned above extended or multiwave boluses do not really work in a closed loop environment. Here's why:
 
 1. The loop determines that now 1.55U/h is to be delivered. Whether this is delivered as an extended bolus or TBR does not matter to the algorithm. In fact, some of the pumps use the extended bolus. What should happen then? Most pump drivers then stop the extended bolus -> You didn't even need to start it.
 2. If you had the extended bolus as input, what should happen in the model?
@@ -48,3 +51,15 @@ As mentioned above extended or multiwave boluses do not really work in a closed 
    2. Should the extended bolus simply be added? So the loop should simply be allowed to continue? Even in the worst hypo? I don't think this is so good: A hypo is foreseen but it must not be prevented?
    
 3. The IOB that the extended bolus builds up materializes after 5 minutes at the next run. Accordingly, the loop would give less basal. So not much changes... except that the possibility of hypo avoidance is taken.
+
+Extended bolus option in AAPS
+-----------------------------------------------------------------------
+As a lot of new loopers have asked for this funcunality as of version 2.6 there will be the option to use extended bolus in AndroidAPS. **To prevent problems closed loop will be disabled for the duration of the extended bolus.**
+
+1. Open Action tab (ACT)
+2. Select extended bolus
+3. Confirm that **closed loop mode will be stopped** for the time of running extended bolus.
+4. On the homescreen you will find information about inuslin units and remaining time of the extended bolus as well as the warning that loop is disabled.
+
+.. image:: ../images/ExtendedBolus_V2_6.png
+   :alt: Extended bolus
