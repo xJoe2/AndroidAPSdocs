@@ -120,16 +120,13 @@ Here we see the status of the insulin pump - in this case an Accu-Chek Combo. Th
 
 ## Care Portal
 
-![Care Portal](../images/Screenshot_care_portal.png)
+Careportal replicated the functions you will find on your Nightscout screen under the “+” symbol which allows you to add notes to your records.
 
-This replicates the functions you will find on your Nightscout screen under the "+" symbol which allows you to add notes to your records. Functions such as recording when you change a pump site, or insulin cartridge should be self-explanatory. 
-
-**BUT this section does not issue any commands to your pump!** So if you add a bolus using this screen it simply makes a note of this on your Nightscout record, the pump won't be instructed to deliver a bolus. 
-
+The code originally used to add offline support for careportal did not harmonize with the development of AAPS and was really blocking further coding. Therefore, decision was made to remove careportal in AAPS version 2.6. See the [careportal page](../Usage/CPbefore26.rst) for details.
 
 ### Carb correction
 
-Care portal can be used to correct faulty carb entries (i.e. you over- or underestimated carbs).
+Treatment tab (TREAT) can be used to correct faulty carb entries (i.e. you over- or underestimated carbs).
 
 1. Check and remember actual COB and IOB on homescreen.
 2. Depending on pump in treatment tab carbs might be shown together with insulin in one line or as a separate entry (i.e. with Dana RS).
