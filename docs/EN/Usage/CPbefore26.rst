@@ -16,6 +16,7 @@ Activity & feedback
 * Age information was moved to actions tab / menu.
 * BG check was moved to actions tab / menu.
 * Temporary target was moved to actions tab / menu.
+* Excercise was moved to actions tab / menu.
 
 Carbs & bolus
 ==============================
