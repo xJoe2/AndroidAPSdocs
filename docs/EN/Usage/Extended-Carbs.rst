@@ -59,7 +59,7 @@ As a lot of new loopers have asked for this funcunality as of version 2.6 there 
 1. Open Action tab (ACT)
 2. Select extended bolus
 3. Confirm that **closed loop mode will be stopped** for the time of running extended bolus.
-4. On the homescreen you will find information about inuslin units and remaining time of the extended bolus as well as the warning that loop is disabled.
+4. On the homescreen you will find information about insulin units and remaining time of the extended bolus as well as the warning that loop is disabled.
 
 .. image:: ../images/ExtendedBolus_V2_6.png
    :alt: Extended bolus
