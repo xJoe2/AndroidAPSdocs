@@ -56,6 +56,8 @@ Extended bolus option in AAPS
 -----------------------------------------------------------------------
 As a lot of new loopers have asked for this funcunality as of version 2.6 there will be the option to use extended bolus in AndroidAPS. **To prevent problems closed loop will be disabled for the duration of the extended bolus.**
 
+Extended bolus is not available if you have activated the function 'Use extended boluses for >200%' (i.e. for `Dana R pump <../Configuration/DanaR-Insulin-Pump.html>`_) to allow basal rates above 200%. In this case button 'extended bolus' is not shown.
+
 1. Open Action tab (ACT)
 2. Select extended bolus
 3. Confirm that **closed loop mode will be stopped** for the time of running extended bolus.
